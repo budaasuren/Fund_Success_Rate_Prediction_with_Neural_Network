@@ -37,7 +37,7 @@ As you can see from the image below, the model has 3 hidden layers, 325 neorons 
 ![Screen Shot 2023-03-26 at 8 26 14 PM](https://user-images.githubusercontent.com/113545468/227817137-676a5885-1750-4641-96db-aa08fd083a6f.png)
 
 
-The activation function used for hidden layers is RELU as RELU is industry common practice, for the output layer, SIGMOID activation function is used. The reason I chose sigmoid in the output layer, is because our final result is categorized into binary (0 or 10) classification.
+The activation function used for hidden layers is RELU as RELU is industry common practice, for the output layer, SIGMOID activation function is used. The reason I chose sigmoid in the output layer, is because our final result is categorized into binary (0 or 1) classification.
 
 ## Summary: 
 As the accuraccy is 0.73 for this model, I would not recommend the model to move to the production phase. Also, I recommend Decision tree based models especially Randon Forest to predict the outcome better as there are 83 features in the model and the dataset is structured. 
