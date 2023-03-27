@@ -7,11 +7,11 @@ The purpose of the analysis is to create a binary classifier that can predict wh
 The data used in this analysis is a CSV file containing more than 34,000 organizations that have received funding from Alphabet Soup over the years.
 
 
-# Final Results: 
+##  Final Results: 
 Loss: 0.6487845182418823, Accuracy: 0.7309614419937134
 
 
-# Data Preprocessing Work Flow: 
+## Data Preprocessing Work Flow: 
 
 * Defined the IS_SUCCESSFUL variable as the target variable since the purpose of this analysis is to predict this varaible.
 * The remaining variables are considered the features of the model. 
@@ -22,7 +22,7 @@ Loss: 0.6487845182418823, Accuracy: 0.7309614419937134
 * Normalized the numeric features for both test and training datasets using Standard Scaler.
 
 
-# Model Building (selecting hyperparameters) and Training Work Flow:
+## Model Building (selecting hyperparameters) and Training Work Flow:
 * Compiling: chose Adam as an optimizer, learning_rate as 1e-3, and  metrics as accuracy.
 * Training: Created a callback that saves the model's weights every five epochs, trained the model at 100 epochs.
 * Model Optimization: Three different approach were used to optimize the model performance.
@@ -39,6 +39,6 @@ As you can see from the image below, the model has 3 hidden layers, 325 neorons 
 
 The activation function used for hidden layers is RELU as RELU is industry common practice, for the output layer, SIGMOID activation function is used. The reason I chose sigmoid in the output layer, is because our final result is categorized into binary (0 or 10) classification.
 
-# Summary: 
+## Summary: 
 As the accuraccy is 0.73 for this model, I would not recommend the model to move to the production phase. Also, I recommend Decision tree based models especially Randon Forest to predict the outcome better as there are 83 features in the model and the dataset is structured. 
 
