@@ -1,13 +1,14 @@
 # Fund_Success_Rate_Prediction_with_Neural_Network
 
-# Overview of the analysis:
+## Overview of the analysis:
 
 The purpose of the analysis is to create a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup using machine learning and neural networks and the features in the provided dataset.
 
 The data used in this analysis is a CSV file containing more than 34,000 organizations that have received funding from Alphabet Soup over the years.
 
 
-# Final Results: Loss: 0.6487845182418823, Accuracy: 0.7309614419937134
+# Final Results: 
+Loss: 0.6487845182418823, Accuracy: 0.7309614419937134
 
 
 # Data Preprocessing Work Flow: 
@@ -31,10 +32,13 @@ The data used in this analysis is a CSV file containing more than 34,000 organiz
 * Evaluating the Model: for the training dataset, loss: 0.5139 - accuracy: 0.7506. Versus, for the testing dataset,Loss: 0.6487845182418823, Accuracy: 0.7309614419937134. The result is sligthly better on training dataset.
 
 As you can see from the image below, the model has 3 hidden layers, 325 neorons (166, 166, 83 for each layer) because the number of features is 83, thus multiplied that number by 2 for the first two layers. Then used the logic to decreace the neoron number as the model progress to next hidden layer. 
+
+
 ![Screen Shot 2023-03-26 at 8 26 14 PM](https://user-images.githubusercontent.com/113545468/227817137-676a5885-1750-4641-96db-aa08fd083a6f.png)
 
 
 The activation function used for hidden layers is RELU as RELU is industry common practice, for the output layer, SIGMOID activation function is used. The reason I chose sigmoid in the output layer, is because our final result is categorized into binary (0 or 10) classification.
 
-# Summary: As the accuraccy is 0.73 for this model, I would not recommend the model to move to the production phase. Also, I recommend Decision tree based models especially Randon Forest to predict the outcome better as there are 83 features in the model and the dataset is structured. 
+# Summary: 
+As the accuraccy is 0.73 for this model, I would not recommend the model to move to the production phase. Also, I recommend Decision tree based models especially Randon Forest to predict the outcome better as there are 83 features in the model and the dataset is structured. 
 
